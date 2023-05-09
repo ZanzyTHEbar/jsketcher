@@ -1,6 +1,6 @@
 {
   "name": "jsketcher",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "JS.Sketcher is a parametric 2D and 3D CAD modeler written in pure javascript",
   "scripts": {
