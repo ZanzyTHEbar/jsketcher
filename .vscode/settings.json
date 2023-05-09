@@ -2,5 +2,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "cSpell.words": ["BREP", "clippy", "jsketcher", "shakram", "tamasfe", "xibyte"]
+  "cSpell.words": ["appimage", "clippy", "jsketcher", "shakram", "tamasfe"]
 }
