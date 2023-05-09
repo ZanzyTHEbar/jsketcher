@@ -2,8 +2,6 @@ name: Produce Desktop Binary Builds
 on:
   workflow_dispatch:
   push:
-    tags:
-      - "v*"
     branches:
       - tauri
       #- master
@@ -148,7 +146,7 @@ jobs:
         run: |
           sudo apt-get install -y jq
           chmod +x ./scripts/prepareCMD.sh 
-          semantic-release --branches tauri
+          semantic-release
 
   cleanup:
     name: Cleanup actions
