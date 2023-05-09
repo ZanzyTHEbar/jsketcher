@@ -148,7 +148,7 @@ jobs:
         run: |
           sudo apt-get install -y jq
           chmod +x ./scripts/prepareCMD.sh 
-          semantic-release
+          semantic-release --branches tauri
 
   cleanup:
     name: Cleanup actions
