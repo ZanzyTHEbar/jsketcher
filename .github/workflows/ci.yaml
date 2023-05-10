@@ -76,7 +76,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           #cache: "pnpm"
           # node-version-file: '.nvmrc'
-      
+
       - name: "Setup Rust"
         if: matrix.platform == 'windows-latest' || matrix.platform == 'macos-latest'
         uses: actions-rs/toolchain@v1
@@ -92,7 +92,7 @@ jobs:
         uses: Swatinem/rust-cache@v2
         with:
           workspaces: "./src-tauri -> target"
-      
+
       #- name: Install dependencies (ubuntu only)
       #  if: matrix.platform == 'ubuntu-latest'
       #  run: |
@@ -134,13 +134,7 @@ jobs:
           name: ${{ matrix.platform }}-software
           #path: "./ESP/.pio/build/${{ matrix.target_name }}${{ matrix.target_build_type }}/${{ env.FIRMWARE_NAME }}.bin"
           path: |
-            "src-tauri/target/release/bundle/**/*.zip"
-            "src-tauri/target/release/bundle/**/*.tar.gz"
-            "src-tauri/target/release/bundle/**/*.deb"
-            "src-tauri/target/release/bundle/**/*.AppImage"
-            "src-tauri/target/release/bundle/**/*.dmg"
-            "src-tauri/target/release/bundle/**/*.app"
-            "src-tauri/target/release/bundle/**/*.msi"
+            "src-tauri/target/release/bundle/**/*.[[dD][eE][bB]|[aA][pP][pP]|[aA][pP][pP][iI][mM][aA][gG][eE]|[mM][sS][iI]|[dD][mM][gG]|[pP][kK][gG]|[tT][aA][rR].[gG][zZ]|[tT][aA][rR].[gG][zZ].[bB][zZ][2]]"
           retention-days: 5
           if-no-files-found: error
 
