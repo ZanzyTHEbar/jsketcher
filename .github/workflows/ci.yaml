@@ -135,6 +135,7 @@ jobs:
           #path: "./ESP/.pio/build/${{ matrix.target_name }}${{ matrix.target_build_type }}/${{ env.FIRMWARE_NAME }}.bin"
           path: |
             "src-tauri/target/release/bundle/**/*.[[dD][eE][bB]|[aA][pP][pP]|[aA][pP][pP][iI][mM][aA][gG][eE]|[mM][sS][iI]|[dD][mM][gG]|[pP][kK][gG]|[tT][aA][rR].[gG][zZ]|[tT][aA][rR].[gG][zZ].[bB][zZ][2]]"
+            
           retention-days: 5
           if-no-files-found: error
 
