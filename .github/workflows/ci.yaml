@@ -35,7 +35,7 @@ jobs:
         #windows-latest,
         platform: [ubuntu-latest]
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-18.04
             rust_target: x86_64-unknown-linux-gnu
           #- os: windows-latest
           #  rust_target: x86_64-pc-windows-msvc
