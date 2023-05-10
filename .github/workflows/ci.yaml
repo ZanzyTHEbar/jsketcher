@@ -85,7 +85,10 @@ jobs:
           profile: minimal
           toolchain: stable
           target: ${{ matrix.platform.rust_target }}
-      - uses: Swatinem/rust-cache@v2
+
+      - name: "Cache Rust"
+        if: matrix.platform == 'windows-latest' || matrix.platform == 'macos-latest'
+        uses: Swatinem/rust-cache@v2
         with:
           workspaces: "./src-tauri -> target"
       
