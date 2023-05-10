@@ -132,7 +132,7 @@ jobs:
         with:
           name: ${{ matrix.platform }}-software
           #path: "./ESP/.pio/build/${{ matrix.target_name }}${{ matrix.target_build_type }}/${{ env.FIRMWARE_NAME }}.bin"
-          path: "target/build/"
+          path: "/workspace/src-tauri/target/release/bundle/**/*{.deb,.AppImage,.msi,.tar.gz,.zip}"
           retention-days: 5
           if-no-files-found: error
 
