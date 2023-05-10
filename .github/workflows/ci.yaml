@@ -66,7 +66,8 @@ jobs:
             echo "::endgroup::"
       - name: Verify build
         run: |
-          ls -la
+          ls -la src-tauri/target/release/bundle/appimage
+          ls -la src-tauri/target/release/bundle/deb
 
       - name: Node.js setup ${{ matrix.node-version }}
         if: matrix.platform == 'windows-latest' || matrix.platform == 'macos-latest'
@@ -133,13 +134,13 @@ jobs:
           name: ${{ matrix.platform }}-software
           #path: "./ESP/.pio/build/${{ matrix.target_name }}${{ matrix.target_build_type }}/${{ env.FIRMWARE_NAME }}.bin"
           path: |
-            "/workspace/src-tauri/target/release/bundle/**/*.zip"
-            "/workspace/src-tauri/target/release/bundle/**/*.tar.gz"
-            "/workspace/src-tauri/target/release/bundle/**/*.deb"
-            "/workspace/src-tauri/target/release/bundle/**/*.AppImage"
-            "/workspace/src-tauri/target/release/bundle/**/*.dmg"
-            "/workspace/src-tauri/target/release/bundle/**/*.app"
-            "/workspace/src-tauri/target/release/bundle/**/*.msi"
+            "src-tauri/target/release/bundle/**/*.zip"
+            "src-tauri/target/release/bundle/**/*.tar.gz"
+            "src-tauri/target/release/bundle/**/*.deb"
+            "src-tauri/target/release/bundle/**/*.AppImage"
+            "src-tauri/target/release/bundle/**/*.dmg"
+            "src-tauri/target/release/bundle/**/*.app"
+            "src-tauri/target/release/bundle/**/*.msi"
           retention-days: 5
           if-no-files-found: error
 
