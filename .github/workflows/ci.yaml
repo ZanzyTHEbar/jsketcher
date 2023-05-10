@@ -57,18 +57,16 @@ jobs:
           image: ghcr.io/zanzythebar/tauridocker:latest
           options: -v ${{ github.workspace }}:/workspace
           run: |
-            export NODE_VERSION=16.13.0
-            mkdir build
             echo "::group::install node dependencies"
             npm install -g pnpm
             npm install -g typescript
             pnpm install
             echo "::group::tauri build"
-            pnpm tauri build 
+            pnpm tauri build
             echo "::endgroup::"
       - name: Verify build
         run: |
-          ls -la build
+          ls -la
 
       - name: Node.js setup ${{ matrix.node-version }}
         if: matrix.platform == 'windows-latest' || matrix.platform == 'macos-latest'
