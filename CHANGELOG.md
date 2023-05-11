@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.0.0-tauri.4](https://github.com/ZanzyTHEbar/jsketcher/compare/v1.0.0-tauri.3...v1.0.0-tauri.4) (2023-05-11)
+
+
+### 🐛 Bug Fixes
+
+* wasm not loading in webkit ([0e74582](https://github.com/ZanzyTHEbar/jsketcher/commit/0e7458284831c946c6a0b0b4e4ded96bd4ceffa7))
+
 ## [1.0.0-tauri.3](https://github.com/ZanzyTHEbar/jsketcher/compare/v1.0.0-tauri.2...v1.0.0-tauri.3) (2023-05-11)
 
 
