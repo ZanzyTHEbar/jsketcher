@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.0.0-tauri.3](https://github.com/ZanzyTHEbar/jsketcher/compare/v1.0.0-tauri.2...v1.0.0-tauri.3) (2023-05-11)
+
+
+### 🍕 Features
+
+* update rust deps ([b809c28](https://github.com/ZanzyTHEbar/jsketcher/commit/b809c28b8cba7a3354cf1f8f8f9917d1f1c9e653))
+
 ## [1.0.0-tauri.2](https://github.com/ZanzyTHEbar/jsketcher/compare/v1.0.0-tauri.1...v1.0.0-tauri.2) (2023-05-11)
 
 
