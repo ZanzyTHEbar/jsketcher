@@ -122,7 +122,8 @@ jobs:
           name: ${{ matrix.platform }}-software
           #path: "./ESP/.pio/build/${{ matrix.target_name }}${{ matrix.target_build_type }}/${{ env.FIRMWARE_NAME }}.bin"
           path: | 
-            "/home/runner/work/jsketcher/jsketcher/src-tauri/target/release/bundle/**/*.{deb,AppImage}"
+            "/home/runner/work/jsketcher/jsketcher/src-tauri/target/release/bundle/**/*.AppImage"
+            "/home/runner/work/jsketcher/jsketcher/src-tauri/target/release/bundle/**/*.deb"
           retention-days: 5
           if-no-files-found: error
 
