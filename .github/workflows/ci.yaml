@@ -36,10 +36,10 @@ jobs:
         #windows-latest,
         platform: [ubuntu-latest, windows-latest]
         include:
-        #- os: ubuntu-18.04
-        #  rust_target: x86_64-unknown-linux-gnu
-        - os: windows-latest
-          rust_target: x86_64-pc-windows-msvc
+          #- os: ubuntu-18.04
+          #  rust_target: x86_64-unknown-linux-gnu
+          - os: windows-latest
+            rust_target: x86_64-pc-windows-msvc
         #- os: macos-latest
         #  rust_target: x86_64-apple-darwin
         #- os: macos-latest
@@ -75,6 +75,7 @@ jobs:
           retention-days: 5
           if-no-files-found: error
       - name: Verify build (Linux)
+        if: matrix.platform == 'ubuntu-latest'
         run: |
           ls -la src-tauri/target/release/bundle/appimage
           ls -la src-tauri/target/release/bundle/deb
