@@ -3,6 +3,80 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.0.0-tauri.5](https://github.com/ZanzyTHEbar/jsketcher/compare/v1.0.0-tauri.4...v1.0.0-tauri.5) (2023-05-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* CHANGES
+
+* fix: update readme
+
+* fix: semantic-release
+
+* Update .releaserc
+
+* Update ci.yaml
+
+* fix: Update .releaserc
+
+* fix: remove repo from package.json
+
+* chore(major): 1.0.0-tauri.1 [skip ci]
+
+## 1.0.0-tauri.1 (2023-05-09)
+
+### ⚠ BREAKING CHANGES
+
+* CHANGES
+
+### 🍕 Features
+
+* add setup scripts for setting up tauri dev environment ([0c41a33](https://github.com/ZanzyTHEbar/jsketcher/commit/0c41a33d0e9dee8ecd645d04e9eb551980680941))
+* **dxf:** add support for dimensions in dxf. ([56c884c](https://github.com/ZanzyTHEbar/jsketcher/commit/56c884ccfd551e0b2dcbee0fc0a0eff62fb6a338))
+* CHANGES
+
+* fix: update readme
+
+* fix: semantic-release
+
+* Update .releaserc
+
+* Update ci.yaml
+
+* fix: Update .releaserc
+
+* fix: remove repo from package.json
+
+* chore(major): 1.0.0-tauri.1 [skip ci]
+
+## 1.0.0-tauri.1 (2023-05-09)
+
+### ⚠ BREAKING CHANGES
+
+* CHANGES
+
+### 🍕 Features
+
+* add setup scripts for setting up tauri dev environment ([0c41a33](https://github.com/ZanzyTHEbar/jsketcher/commit/0c41a33d0e9dee8ecd645d04e9eb551980680941))
+* **dxf:** add support for dimensions in dxf. ([56c884c](https://github.com/ZanzyTHEbar/jsketcher/commit/56c884ccfd551e0b2dcbee0fc0a0eff62fb6a338))
+
+### 🍕 Features
+
+* add windows binary ([e649d76](https://github.com/ZanzyTHEbar/jsketcher/commit/e649d762b62aa957da961c86e78e909fb468b172))
+* Update ci.yaml ([6262000](https://github.com/ZanzyTHEbar/jsketcher/commit/62620001d74ff91c351abee10393fe0da112c174))
+
+
+* Add full CI and Support for linux (#3) ([e36f11a](https://github.com/ZanzyTHEbar/jsketcher/commit/e36f11a804baa90aaf8642234b445a956b17643f)), closes [#3](https://github.com/ZanzyTHEbar/jsketcher/issues/3) [#200](https://github.com/ZanzyTHEbar/jsketcher/issues/200) [#183](https://github.com/ZanzyTHEbar/jsketcher/issues/183)
+* Tauri (#1) ([b66cd01](https://github.com/ZanzyTHEbar/jsketcher/commit/b66cd019edbba93d8e29cd3d13b0b2e1a344fdbd)), closes [#1](https://github.com/ZanzyTHEbar/jsketcher/issues/1) [#200](https://github.com/ZanzyTHEbar/jsketcher/issues/200) [#183](https://github.com/ZanzyTHEbar/jsketcher/issues/183)
+
+
+### 🐛 Bug Fixes
+
+* appimage failing to build ([c8b25b9](https://github.com/ZanzyTHEbar/jsketcher/commit/c8b25b90efa79501733b5f22661991d531b82471))
+* windows ci ([7f347df](https://github.com/ZanzyTHEbar/jsketcher/commit/7f347df28c6f88c3db64f503d18f1c0a72f91b56))
+* windows ci deps ([0b19d48](https://github.com/ZanzyTHEbar/jsketcher/commit/0b19d4879c1515e722d5477b1195b5f62a45a105))
+
 ## [1.0.0-tauri.4](https://github.com/ZanzyTHEbar/jsketcher/compare/v1.0.0-tauri.3...v1.0.0-tauri.4) (2023-05-11)
 
 
