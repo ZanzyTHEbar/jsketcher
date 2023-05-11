@@ -64,6 +64,15 @@ jobs:
             echo "::group::tauri build"
             pnpm tauri build
             echo "::endgroup::"
+      - name: Archive Software Binaries
+        if: matrix.platform == 'ubuntu-latest'
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-files
+          path: | 
+            src-tauri/target/release/bundle/appimage/*.AppImage
+          retention-days: 5
+          if-no-files-found: error
       - name: Verify build
         run: |
           ls -la src-tauri/target/release/bundle/appimage
@@ -114,17 +123,6 @@ jobs:
         with:
           name: production-files
           path: "${{ join(fromJSON(steps.tauri_build.outputs.artifacts), '\n') }}"
-
-      - name: Archive Software Binaries
-        if: matrix.platform == 'ubuntu-latest'
-        uses: actions/upload-artifact@v3
-        with:
-          name: ${{ matrix.platform }}-software
-          #path: "./ESP/.pio/build/${{ matrix.target_name }}${{ matrix.target_build_type }}/${{ env.FIRMWARE_NAME }}.bin"
-          path: | 
-            "./src-tauri/target/release/bundle/appimage/*.AppImage"
-          retention-days: 5
-          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
